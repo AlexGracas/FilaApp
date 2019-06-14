@@ -28,5 +28,10 @@ namespace FilaControllerTest
                 System.Console.WriteLine();
             }
         }
+
+        public void MostrarPessoa(Pessoa p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

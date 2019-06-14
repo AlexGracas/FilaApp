@@ -11,5 +11,6 @@ namespace FilaController
     {
         void MostrarFila(String NomeFila, IEnumerable<Pessoa> pessoas);
         void LimparFilas();
+        void MostrarPessoa(Pessoa p);
     }
 }

@@ -53,9 +53,22 @@ namespace FilaController
         /// </summary>
         public IList<Pessoa> Fila3 { get; set; }
 
+        /// <summary>
+        /// Método que popula cada uma das filas de acordo 
+        /// com os critérios preestabelecidos.
+        /// </summary>
         public void OrdenarFila()
+        {            
+        }
+
+        /// <summary>
+        /// Método que irá executar uma ação quando uma pessoa for selecionada.
+        /// Atualmente será mostrar outro controle com a pessoa Selecionada.
+        /// </summary>
+        /// <param name="p">Pessoa a ser mostrada.</param>
+        public void SelecionarPessoa(Pessoa p)
         {
-           
+            _view.MostrarPessoa(p);
         }
     }
 }
