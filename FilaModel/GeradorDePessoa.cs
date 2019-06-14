@@ -23,10 +23,10 @@ namespace FilaModel
             Pessoa p = new Pessoa();
             p.Nome = GerarNome();
             p.Nascimento = new DateTime(DateTime.Now.Year - r.Next(80), r.Next(12)+1, r.Next(27)+1) ;
-            p.CPF = r.Next(999).ToString().PadLeft(3) + "." +
-                r.Next(999).ToString().PadLeft(3) + "." +
-                r.Next(999).ToString().PadLeft(3) + "-" +
-                r.Next(99).ToString().PadLeft(2);
+            p.CPF = r.Next(999).ToString().PadLeft(3, '0') + "." +
+                r.Next(999).ToString().PadLeft(3,'0') + "." +
+                r.Next(999).ToString().PadLeft(3, '0') + "-" +
+                r.Next(99).ToString().PadLeft(2, '0');
             p.Assento = GerarAssento();
             return p;
         }
