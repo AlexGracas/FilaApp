@@ -15,3 +15,5 @@ Neste projeto o aluno deverá fazer as seguintes tarefas:
   - Um campo MaskedTextBox para CPF.
 
 - Criar a persistência no Banco de dados para Pessoa e Assento.
+  - Deverá ser criado a classe de contexto, seguindo os passos na seção 4.1
+  - Deverá ser criado um DataStore para pessoas conforme os passos na seção 4.2
