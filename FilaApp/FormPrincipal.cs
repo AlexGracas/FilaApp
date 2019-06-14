@@ -56,6 +56,7 @@ namespace FilaApp
         {
             DataGridView dataGridView = (DataGridView)sender;
             Pessoa p = (Pessoa)((IList<Pessoa>)dataGridView.DataSource)[e.RowIndex];
+            _controller.SelecionarPessoa(p);
         }
 
         /// <summary>
